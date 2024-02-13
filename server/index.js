@@ -11,7 +11,7 @@ const app= express();
 dotenv.config();
 app.use(cors());
 
-app.use(express.json()); // Update Added
+app.use(express.json());
 app.use(bodyParser.json({extended:true}));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use('/',router);
